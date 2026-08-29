@@ -125,7 +125,6 @@ data/*
 **/*.txt
 **/*.log
 **/*.db
-**/*.sqlite
 **/*.xml
 **/*.JNB
 **/*.jnb
@@ -191,8 +190,6 @@ cover/
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -203,6 +200,13 @@ instance/
 
 # Sphinx documentation
 docs/_build/
+
+# Sphinx's incremental-build cache. src/<pkg>/_sphinx_html/ is the SERVED
+# doc bundle and stays tracked, but .doctrees/ is scratch that sphinx-build
+# writes beside the HTML -- pickled doctrees plus a downloaded copy of
+# CPython's intersphinx inventory. Nothing reads it to serve the docs, and
+# committing it drags the whole stdlib object list into this repo.
+src/*/_sphinx_html/.doctrees/
 
 # PyBuilder
 .pybuilder/
@@ -657,7 +661,6 @@ flycheck_*.el
 
 ### Source: /home/ywatanabe/.git-templates/.gitignore-templates/Custom/SQL.gitignore ###
 **/*.db
-**/*.sqlite3
 *.db-shm
 *.db-wal
 
