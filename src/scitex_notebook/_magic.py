@@ -8,7 +8,7 @@ Adoption is one line at the top of any notebook::
     %load_ext scitex_notebook
 
 After that, each executed cell is analysed at runtime and recorded in the
-same Clew SQLite database used by ``@scitex.session`` and ``stx.io``. The
+same Clew store used by ``@scitex.session`` and ``stx.io``. The
 extension targets three of the canonical reproducibility risks for
 notebooks identified in the literature:
 

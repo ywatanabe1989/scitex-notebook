@@ -153,7 +153,7 @@ Once loaded, every executed cell is analysed at runtime:
 - **Untracked I/O** — every `stx.io.save/load` call is recorded per-cell
 
 Cell metadata (dependencies, warnings, file hashes) is written to the same
-Clew SQLite database used by `@scitex.session` and `stx.io`.
+Clew store used by `@scitex.session` and `stx.io`.
 
 ```bash
 %load_ext scitex_notebook
