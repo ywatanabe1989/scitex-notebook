@@ -125,7 +125,6 @@ data/*
 **/*.txt
 **/*.log
 **/*.db
-**/*.sqlite
 **/*.xml
 **/*.JNB
 **/*.jnb
@@ -191,8 +190,6 @@ cover/
 # Django stuff:
 *.log
 local_settings.py
-db.sqlite3
-db.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -657,7 +654,6 @@ flycheck_*.el
 
 ### Source: /home/ywatanabe/.git-templates/.gitignore-templates/Custom/SQL.gitignore ###
 **/*.db
-**/*.sqlite3
 *.db-shm
 *.db-wal
 
